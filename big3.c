@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main() {
+void big3() {
     int num1, num2, num3;
 
     // Take input for three numbers
-    printf("Enter three numbers: ");
+    printf("Biggest of 3 numbers\nEnter three numbers: ");
     scanf("%d %d %d", &num1, &num2, &num3);
 
     // Find the largest number
@@ -16,6 +16,5 @@ int main() {
         printf("The largest number is: %d\n", num3);
     }
 
-    return 0;
 }
 

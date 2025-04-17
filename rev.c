@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+void rev() {
     char str[100], reversed[100];
     int length, i, j;
 
     // Input the string
-    printf("Enter a string: ");
-    gets(str);  // Use gets() to take input (be cautious with this function)
+    printf("\nReverse a String\nEnter a string: ");
+    // gets(str);  // Use gets() to take input (be cautious with this function)
+    fgets(str, sizeof(str), stdin);
 
     // Find the length of the string
     length = strlen(str);
@@ -21,4 +22,5 @@ int main() {
 
     // Output the reversed string
     printf("Reversed string: %s\n", reversed);
+}
 

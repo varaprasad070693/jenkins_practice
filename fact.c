@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int main() {
+void fact() {
     int num;
     long long factorial = 1;
 
     // Take input from the user
-    printf("Enter a positive integer: ");
+    printf("\nFatorial of a Number\nEnter a positive integer: ");
     scanf("%d", &num);
 
     // Check if the number is negative
@@ -21,6 +21,6 @@ int main() {
         printf("Factorial of %d = %lld\n", num, factorial);
     }
 
-    return 0;
+   
 }
 

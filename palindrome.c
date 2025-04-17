@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main() {
+void palindrome() {
     int num, reversedNum = 0, remainder, originalNum;
 
     // Take input from the user
-    printf("Enter an integer: ");
+    printf("\nPalindrome of a Number\nEnter an integer: ");
     scanf("%d", &num);
 
     // Store the original number to compare later
@@ -24,6 +24,6 @@ int main() {
         printf("%d is not a palindrome.\n", originalNum);
     }
 
-    return 0;
+   
 }
 
