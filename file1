@@ -1,3 +1,3 @@
 this file is created to check web hooks
 added email notification
-confirm email is working
+confirm email is working by changing the jenkins IP address in webhooks
