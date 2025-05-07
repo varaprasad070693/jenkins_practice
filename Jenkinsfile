@@ -12,7 +12,7 @@ REPO_LIST=$WORKSPACE/repo_list
 #Genearte date
 TODAY=$(date +%Y%m%d)
 
-sudo chmod -R 755 /home/ubuntu
+sudo chmod -R 777 /home/ubuntu
 
 #Backup directory
 BACKUP_DIR="/home/ubuntu/Jenkins/Backup_Audit"
