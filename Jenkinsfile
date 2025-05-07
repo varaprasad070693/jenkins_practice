@@ -15,9 +15,9 @@ TODAY=$(date +%Y%m%d)
 sudo chmod -R 755 /home/ubuntu
 
 #Backup directory
-BACKUP_DIR="/home/ubuntu/Jenkins/Backup_Audit/"
+BACKUP_DIR="/home/ubuntu/Jenkins/Backup_Audit"
 
-mkdir -p $BACKUP_DIR
+sudo /bin/mkdir -p $BACKUP_DIR
 
 while read line
 do
