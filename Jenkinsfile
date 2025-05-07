@@ -7,7 +7,7 @@ pipeline {
       #!/bin/bash
 
 #$repo_list is the file contains git repo URL
-REPO_LIST=repo_list.txt
+REPO_LIST=$WORKSPACE/repo_list.txt
 
 #Genearte date
 TODAY=$(date +%Y%m%d)
@@ -47,7 +47,7 @@ do
 	fi
 
 	#create a tar file for the repo
-	tar -czf $BACKUP_DIR/$repo_name-$TODAY.tar.gz -C "$BACKUP_DIR" "repo_name"
+	tar -czf $BACKUP_DIR/$repo_name-$TODAY.tar.gz -C "$BACKUP_DIR" "$repo_name"
 
 	#-C "$BACKUP_DIR": Changes the working directory to $BACKUP_DIR before adding files to the archive
 	#"${repo_name}": The directory to archive, relative to $BACKUP_DIR
