@@ -6,7 +6,7 @@ pipeline {
 		    sh '''
       #!/bin/bash
 
-$repo_list is the file contains git repo URL
+#$repo_list is the file contains git repo URL
 REPO_LIST=repo_list.txt
 
 #Genearte date
