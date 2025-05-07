@@ -24,7 +24,7 @@ do
 	
 	repo_name=$(basename $line .git)
 
-	repo_path=$BACKUP_DIR/$repo_name)
+	repo_path=$BACKUP_DIR/$repo_name
 
 	if [ ! -d $repo_path/.git ];then
 		echo " clone started for $repo_name"
