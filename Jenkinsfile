@@ -17,7 +17,7 @@ sudo chmod -R 755 /home/ubuntu
 #Backup directory
 BACKUP_DIR="/home/ubuntu/Jenkins/Backup_Audit"
 
-sudo mkdir $BACKUP_DIR
+sudo mkdir -p $BACKUP_DIR
 
 while read line
 do
