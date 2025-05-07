@@ -12,7 +12,7 @@ REPO_LIST=repo_list.txt
 #Genearte date
 TODAY=$(date +%Y%m%d)
 
-#sudo chmod -R 755 /home/ubuntu
+sudo chmod -R 755 /home/ubuntu
 
 #Backup directory
 BACKUP_DIR="/home/ubuntu/Jenkins/Backup_Audit/"
@@ -57,7 +57,7 @@ do
 	git log --since=1.day > $BACKUP_DIR/audit-$repo_name-$TODAY.txt
 	
 done<$REPO_LIST
-#sudo chmod -R 750 /home/ubuntu
+sudo chmod -R 750 /home/ubuntu
 '''
     }
   }
