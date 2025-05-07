@@ -3,6 +3,7 @@ pipeline {
   stages {
     stage('Backup and Audit') {
 	    steps {
+		    sh '''
       #!/bin/bash
 
 $repo_list is the file contains git repo URL
@@ -54,6 +55,7 @@ do
 	git log --since=1.day > $BACKUP_DIR/audit-$repo_name-$TODAY.txt
 	
 done<$REPO_LIST
+'''
     }
   }
 }
