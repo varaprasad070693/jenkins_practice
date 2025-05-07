@@ -57,7 +57,7 @@ do
 	git log --since=1.day > $BACKUP_DIR/audit-$repo_name-$TODAY.txt
 	
 done<$REPO_LIST
-sudo chmod -R 750 /home/ubuntu
+sudo chmod -R 755 /home/ubuntu
 '''
     }
   }
