@@ -1,7 +1,8 @@
 pipeline {
   agent any
   stages {
-    stage {
+    stage('Backup and Audit') {
+	    steps {
       #!/bin/bash
 
 $repo_list is the file contains git repo URL
@@ -55,4 +56,5 @@ do
 done<$REPO_LIST
     }
   }
+}
 }
