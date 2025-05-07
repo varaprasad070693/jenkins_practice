@@ -7,7 +7,7 @@ pipeline {
       #!/bin/bash
 
 #$repo_list is the file contains git repo URL
-REPO_LIST=$WORKSPACE/repo_list.txt
+REPO_LIST=$WORKSPACE/repo_list
 
 #Genearte date
 TODAY=$(date +%Y%m%d)
